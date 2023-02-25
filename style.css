@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Barre de navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #c5f5f1;
+  position: sticky;
+  top: 0;
+}
+nav img {
+  height: 10%;
+  width: 10%;
+}
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+}
+
+nav .onglets {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav .onglets p {
+  font-size: 17px;
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+nav .onglets input {
+  margin: 8px 20px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: #f2f2f2;
+  outline: none;
+}
+/* Fin de la barre de navigation */
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-size: 50px;
+  max-width: 500px;
+  text-align: center;
+}
+header p {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #c5f5f1;
+  text-align: center;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+}
+header button {
+  padding: 15px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+/* Fin du header */
+
+/* Section principale */
+
+.main {
+  margin: 20px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Toutes les cartes */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cards .card {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.cards .card img {
+  width: 350px;
+}
+.cards .card .card-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cards .card .card-body p {
+  margin-top: -10px;
+}
+/* Fin de toutes les cartes */
+
+/* texte de présentation */
+.main .texte {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #c5f5f1;
+  text-align: center;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Fin de texte de présentation */
+/* Fin de la section principale */
+
+/* Pied de page */
+footer {
+  margin-top: 100px;
+  background-color: #c5f5f1;
+  padding: 30px;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 600;
+}
+footer .social-media {
+  display: flex;
+}
+footer .social-media p {
+  margin-right: 15px;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 5px;
+  text-align: center;
+  width: 20px;
+  cursor: pointer;
+}
+/* Fin du pied de page */
+
+@media screen and (max-width: 640px) {
+  nav .onglets .link,
+  nav h1 {
+    display: none;
+  }
+  .cards .card img {
+    width: 300px;
+  }
+}
